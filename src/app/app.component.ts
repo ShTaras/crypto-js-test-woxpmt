@@ -11,15 +11,15 @@ export class AppComponent {
 
   encode() {
 
-    let keyString = 'w9z$C&F)J@McQfTj';
-    const data =
-      'a9dc324f2ffaf3199a462642a6e915bd7842e55fa2d57527865226b6d01bfb492adcbbf9305c31b904bd29226dcad5f5';
-    const iv = CryptoJS.enc.Hex.parse(data.substr(0, 16));
-    const ct = CryptoJS.enc.Hex.parse(data.substr(16));
-    // const key = CryptoJS.enc.Utf8.parse(keyS)
+    // let keyString = 'w9z$C&F)J@McQfTj';
+    // const data =
+    //   'a9dc324f2ffaf3199a462642a6e915bd7842e55fa2d57527865226b6d01bfb492adcbbf9305c31b904bd29226dcad5f5';
+    // const iv = CryptoJS.enc.Hex.parse(data.substr(0, 16));
+    // const ct = CryptoJS.enc.Hex.parse(data.substr(16));
+    // // const key = CryptoJS.enc.Utf8.parse(keyS)
 
-    const bytes = CryptoJS.AES.decrypt(ct.toString(), keyString, { iv: iv });
-    console.log('Result : ' + bytes.toString(CryptoJS.enc.Base64));
+    // const bytes = CryptoJS.AES.decrypt(ct.toString(), keyString, { iv: iv });
+    // console.log('Result : ' + bytes.toString(CryptoJS.enc.Base64));
 
 
 
