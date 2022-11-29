@@ -10,10 +10,11 @@ export class AppComponent {
   name = 'Angular';
 
   encode() {
-
-    // let keyString = 'w9z$C&F)J@McQfTj';
-    // const data =
-    //   'a9dc324f2ffaf3199a462642a6e915bd7842e55fa2d57527865226b6d01bfb492adcbbf9305c31b904bd29226dcad5f5';
+    let keyString = 'w9z$C&F)J@McQfTj';
+    const data =
+      'a9dc324f2ffaf3199a462642a6e915bd7842e55fa2d57527865226b6d01bfb492adcbbf9305c31b904bd29226dcad5f5';
+    const dataBytes = CryptoJS.enc.Hex.parse(data.substr(0, 16));
+    // console.log(dataBytes);
     // const iv = CryptoJS.enc.Hex.parse(data.substr(0, 16));
     // const ct = CryptoJS.enc.Hex.parse(data.substr(16));
     // // const key = CryptoJS.enc.Utf8.parse(keyS)
@@ -21,12 +22,8 @@ export class AppComponent {
     // const bytes = CryptoJS.AES.decrypt(ct.toString(), keyString, { iv: iv });
     // console.log('Result : ' + bytes.toString(CryptoJS.enc.Base64));
 
+    // WORK SIMPLE BASIC EXAMPLE FOR VICTOR
 
-
-
-
-// WORK SIMPLE BASIC EXAMPLE FOR VICTOR
-    
     // let data = 'Taras';
     // let keyString = 'w9z$C&F)J@McQfTj';
     // // Encrypt
